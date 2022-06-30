@@ -59,9 +59,10 @@ for file in 'README.md' 'pyproject.toml' 'docs/conf.py' 'docs/index.rst' 'tests/
 do
     if [ -f $file ]
     then
-        sed -i '' 's/Package-Name/'$REPOSITORY_NAME'/g' $file
-        sed -i '' 's/package-name/'$PROJECT_NAME'/g' $file
-        sed -i '' 's/package_name/'$PACKAGE_NAME'/g' $file
+        sed -i.bak 's/Package-Name/'$REPOSITORY_NAME'/g' $file
+        sed -i.bak 's/package-name/'$PROJECT_NAME'/g' $file
+        sed -i.bak 's/package_name/'$PACKAGE_NAME'/g' $file
+        rm $file.bak
     fi
 done
 
