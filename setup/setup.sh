@@ -54,13 +54,14 @@ cd $(dirname $0)/../
 
 mv ./package_name ./$PACKAGE_NAME
 
+# Replace matching strings in files.
 for file in 'README.md' 'pyproject.toml' 'docs/conf.py' 'docs/index.rst' 'tests/docs/test_build.py' 'tests/test_nothing.py' '.github/workflows/test.yml'
 do
     if [ -f $file ]
     then
-        sed -i 's/Package-Name/'$REPOSITORY_NAME'/g' $file
-        sed -i 's/package-name/'$PROJECT_NAME'/g' $file
-        sed -i 's/package_name/'$PACKAGE_NAME'/g' $file
+        sed -i '' 's/Package-Name/'$REPOSITORY_NAME'/g' $file
+        sed -i '' 's/package-name/'$PROJECT_NAME'/g' $file
+        sed -i '' 's/package_name/'$PACKAGE_NAME'/g' $file
     fi
 done
 

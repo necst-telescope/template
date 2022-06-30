@@ -1,12 +1,13 @@
 # Set-up a repository from this template
 
-## `package_name` directory
+## Set Repository Name
 
-- Replace the directory name, following the convention below
+- Clone this repository and run the following command
 
-    | Pattern | Capital Letter | Hyphen | Under Score |
-    | --- | --- | --- | --- |
-    | `package_name` | if necessary | :x: | :o: |
+    ```shell
+    $ ./setup.sh -n <repository name on GitHub>
+    $ ./setup.sh -n necst-lib
+    ```
 
 ## `LICENSE`
 
@@ -14,56 +15,9 @@
 
 ## `README.md`
 
-- Replace text, following the convention below
-
-    | Pattern | Capital Letter | Hyphen | Under Score |
-    | --- | --- | --- | --- |
-    | `Package-Name` | :o: | :o: | if necessary |
-    | `package-name` | if necessary | :o: | if necessary |
-
 - Edit package description accordingly
 
 ## `pyproject.toml`
 
-- Replace text, following the convention below
-
-    | Pattern | Capital Letter | Hyphen | Under Score |
-    | --- | --- | --- | --- |
-    | `Package-Name` | :o: | :o: | if necessary |
-    | `package-name` | if necessary | :o: | if necessary |
-
 - Replace `TEMPLATE` description, with a text written in repository `About` field on GitHub
-
-## `docs/conf.py`
-
-- Replace text, following the convention below
-
-    | Pattern | Capital Letter | Hyphen | Under Score |
-    | --- | --- | --- | --- |
-    | `Package-Name` | :o: | :o: | if necessary |
-    | `package_name` | if necessary | :x: | :o: |
-
-## `docs/index.rst`
-
-- Replace text, following the convention below
-
-    | Pattern | Capital Letter | Hyphen | Under Score |
-    | --- | --- | --- | --- |
-    | `package_name` | if necessary | :x: | :o: |
-
-## `tests/docs/test_build.py`
-
-- Replace text, following the convention below
-
-    | Pattern | Capital Letter | Hyphen | Under Score |
-    | --- | --- | --- | --- |
-    | `package_name` | if necessary | :x: | :o: |
-
-## `tests/test_nothing.py`
-
-- Replace text, following the convention below
-
-    | Pattern | Capital Letter | Hyphen | Under Score |
-    | --- | --- | --- | --- |
-    | `package_name` | if necessary | :x: | :o: |
-
+- Fix authors.
