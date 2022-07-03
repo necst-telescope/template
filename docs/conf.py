@@ -35,7 +35,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/USERNAME/Package-Name",
+            "url": "https://github.com/necst-telescope/Package-Name",
             "icon": "fab fa-github-square",
             "type": "fontawesome",
         },
